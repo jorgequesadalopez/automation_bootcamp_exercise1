@@ -18,11 +18,6 @@ jobs:
           name: Install Dependencies
           command: pip install --user yamllint
       - run:
-         name: fallo
-         command: cd /tmp
-         command: mkdir hola
-         command: touch /tmp/hola/prueba.txt
-      - run:
           name: Lint YAMLs
           command: /home/circleci/.local/bin/yamllint .circleci/config.yml
 workflows:
