@@ -19,7 +19,7 @@ jobs:
           command: pip install --user yamllint
       - run:
          name: fallo
-         command: cd /hola
+         command: mkdir /hola && cd /hola
       - run:
           name: Lint YAMLs
           command: /home/circleci/.local/bin/yamllint .circleci/config.yml
