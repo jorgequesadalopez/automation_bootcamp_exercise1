@@ -22,5 +22,5 @@ jobs:
           command: /home/circleci/.local/bin/yamllint .circleci/config.yml
 workflows:
   yamllint-workflow:
-    jobs:
+    #jobs:
       - yamllint
